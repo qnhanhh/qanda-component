@@ -1,12 +1,9 @@
-import { Navigation } from './Navigation/Navigation';
-import './App.css';
-import { Button } from './Button';
-import { Teachers } from './Teachers';
-import { Book3d } from './Book3d';
+import { Parallax } from './Parallax';
 
 function App() {
   return (
     <div className="App">
+      <Parallax/>
     </div>
   );
 }
