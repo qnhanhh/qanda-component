@@ -1,6 +1,24 @@
+import { useEffect } from 'react'
 import './Parallax.css'
 
 export const Parallax = () => {
+    useEffect(()=>{
+        const content=document.querySelector('.content')
+        const background=document.querySelector('.background') 
+        const train=document.querySelector('.train') 
+        const foreground=document.querySelector('.foreground') 
+
+        content.addEventListener('wheel',(e)=>{
+            e.preventDefault()
+            content.scrollTo({
+                top: 0,
+                left:content.scrollLeft+e.deltaY,
+                behavior: 'smooth'
+            })
+        })
+        
+    },[])
+
     return (
         <>
             <div className="content">

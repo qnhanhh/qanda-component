@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const NavContainer = styled.div`
+export const Container = styled.div`
         margin: 0;
         padding-bottom: 2px;
         width: 100vw;
@@ -14,18 +14,8 @@ export const NavContainer = styled.div`
             padding: 8px 0;
         }
     `
-export const Button = styled.button`
-        display: none;
 
-        /* @media (max-width:832px) {
-            display: block;
-            width: 60px;
-            height: 60px;
-            background-color: red;
-        } */
-    `
-
-export const NavList = styled.ul`
+export const List = styled.ul`
         width: 800px;
         height: 100%;
         padding: 0 16px;
@@ -41,7 +31,7 @@ export const NavList = styled.ul`
             width: 90vw;
         }
     `
-export const NavIndicator = styled.span`
+export const Indicator = styled.span`
         width: 90px;
         height: 90px;
         border-radius: 50%;
@@ -55,7 +45,7 @@ export const NavIndicator = styled.span`
            display: none !important;
         }
     `
-export const NavLink = styled.a`
+export const Link = styled.a`
         text-decoration: none;
         color: #000;
         width: 120px;
@@ -80,7 +70,7 @@ export const NavLink = styled.a`
             }
         }
     `
-export const NavLogo = styled.div`
+export const Logo = styled.div`
         width: 100%;
         height: 100%;
         background: url("https://www.qandastudy.vn/kh/uploads/files/LOGOQANDASTUDY%20(1).png")
@@ -96,7 +86,7 @@ export const NavLogo = styled.div`
             }
         }
     `
-export const NavTitle = styled.span`
+export const Title = styled.span`
         display: none;
         font-size: 20px;
 

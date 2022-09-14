@@ -1,11 +1,9 @@
 import { useEffect, useState } from 'react'
-import { motion } from 'framer-motion'
 import 'boxicons'
 import * as css from './NavigationCSS'
 
 export const Navigation = () => {
     const [active, setActive] = useState()
-    const [isOpen, setOpen] = useState(false);
 
     useEffect(() => {
         const links = document.querySelectorAll('.nav-link')
@@ -20,7 +18,7 @@ export const Navigation = () => {
     }, [])
 
     useEffect(() => {
-        const leftIndex = [31, 201, 365, 538, 710]
+        const leftIndex = [31, 195, 360, 518, 680]
         const links = document.querySelectorAll('.nav-link')
         const indicator = document.querySelector('.nav-indicator')
         links.forEach((link, index) => {
@@ -34,40 +32,39 @@ export const Navigation = () => {
     }, [active])
 
     return (
-        <css.NavContainer>
-            <css.Button></css.Button>
-            <css.NavList>
-                <css.NavIndicator className='nav-indicator'></css.NavIndicator>
+        <css.Container>
+            <css.List>
+                <css.Indicator className='nav-indicator'></css.Indicator>
                 <li>
-                    <css.NavLink href="/" className='nav-link'>
-                        <css.NavTitle>Giao vien</css.NavTitle>
-                        <box-icon color='white' name="rocket"></box-icon>
-                    </css.NavLink>
+                    <css.Link href="/" className='nav-link'>
+                        <css.Title>Giao vien</css.Title>
+                        <box-icon color='white' name="chalkboard"></box-icon>
+                    </css.Link>
                 </li>
                 <li>
-                    <css.NavLink href="/" className='nav-link'>
-                        <css.NavTitle>Sach</css.NavTitle>
-                        <box-icon color='white' name="rocket"></box-icon>
-                    </css.NavLink>
+                    <css.Link href="/" className='nav-link'>
+                        <css.Title>Sach</css.Title>
+                        <box-icon color='white' name="book-open"></box-icon>
+                    </css.Link>
                 </li>
                 <li>
-                    <css.NavLink href="/" className="nav-link">
-                        <css.NavLogo></css.NavLogo>
-                    </css.NavLink>
+                    <css.Link href="/" className="nav-link">
+                        <css.Logo></css.Logo>
+                    </css.Link>
                 </li>
                 <li>
-                    <css.NavLink href="/" className='nav-link'>
-                        <css.NavTitle>Su kien</css.NavTitle>
-                        <box-icon color='white' name="rocket"></box-icon>
-                    </css.NavLink>
+                    <css.Link href="/" className='nav-link'>
+                        <css.Title>Su kien</css.Title>
+                        <box-icon color='white' name="calendar-event"></box-icon>
+                    </css.Link>
                 </li>
                 <li>
-                    <css.NavLink href="/" className='nav-link'>
-                        <css.NavTitle>Ve chung toi</css.NavTitle>
-                        <box-icon color='white' name="rocket"></box-icon>
-                    </css.NavLink>
+                    <css.Link href="/" className='nav-link'>
+                        <css.Title>Ve chung toi</css.Title>
+                        <box-icon color='white' name="building-house"></box-icon>
+                    </css.Link>
                 </li>
-            </css.NavList>
+            </css.List>
 
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="filter-svg">
                 <defs>
@@ -78,6 +75,6 @@ export const Navigation = () => {
                     </filter>
                 </defs>
             </svg>
-        </css.NavContainer>
+        </css.Container>
     )
 }

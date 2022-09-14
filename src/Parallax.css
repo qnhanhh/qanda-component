@@ -1,10 +1,10 @@
 .content{
     margin: auto;
     position:relative;
-    overflow: hidden;
+    overflow-x: scroll;
+    overflow-y: hidden;
     width: 200px;
     height: 200px;
-    border: 1px solid black;
 }
 
 .layer{
@@ -13,17 +13,17 @@
 
 .background{
     transform: translateX(0);
-    animation: background-shift 4s linear 1 forwards;
+    /* animation: background-shift 4s linear 1 forwards; */
 }
 
 .train{
     transform: translateX(-600px);
-    animation: train-shift 4s linear 1 forwards;
+    /* animation: train-shift 4s linear 1 forwards; */
 }
 
 .foreground{
     transform: translateX(-200px);
-    animation: foreground-shift 4s linear 1 forwards;
+    /* animation: foreground-shift 4s linear 1 forwards; */
 }
 
 @keyframes background-shift {

@@ -8,7 +8,7 @@ import { useGLTF,Float } from '@react-three/drei'
 export function Model(props) {
   const { nodes, materials } = useGLTF('/marble_bust_01_4k.gltf')
   return (
-    <group {...props} dispose={null} scale={3}>
+    <group {...props} dispose={null} scale={8}>
       <mesh castShadow geometry={nodes.marble_bust_01.geometry} material={materials.marble_bust_01} position={[0, -0.1, 0]} />
     </group>
   )

@@ -1,9 +1,16 @@
-import { Parallax } from './Parallax';
+import { Ads } from './Ads';
+import { Banner } from './Banner/Banner';
+import { Carousel } from './Carousel';
+import { Navigation } from './Navigation/Navigation'
 
 function App() {
   return (
     <div className="App">
-      <Parallax/>
+      <Navigation />
+      <Banner />
+      <Ads />
+      <Carousel data='teachers'/>
+      {/* <Carousel data='subjects'/> */}
     </div>
   );
 }
