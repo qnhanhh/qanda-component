@@ -6,7 +6,7 @@ export const Container = styled.div`
         width: 100vw;
         height: 80px;
         border-radius: 20px 20px 0 0;
-        background-color: #000;
+        background-color: #1D1D1D;
         position: fixed;
         z-index: 10;
 
@@ -24,7 +24,7 @@ export const List = styled.ul`
         justify-content: space-between;
         list-style-type: none;
         position: relative;
-        background-color: #000;
+        background-color: #1D1D1D;
         filter: url('#goo');
 
         @media (max-width:832px) {
@@ -35,7 +35,7 @@ export const Indicator = styled.span`
         width: 90px;
         height: 90px;
         border-radius: 50%;
-        background-color: #000;
+        background-color: #1D1D1D;
         position: absolute;
         z-index: 1;
         bottom: -35px;
@@ -47,7 +47,7 @@ export const Indicator = styled.span`
     `
 export const Link = styled.a`
         text-decoration: none;
-        color: #000;
+        color: #1D1D1D;
         width: 120px;
         height: 100%;
         display: inline-grid;
@@ -71,7 +71,7 @@ export const Link = styled.a`
         }
     `
 export const Logo = styled.div`
-        width: 100%;
+        width: 170%;
         height: 100%;
         background: url("https://www.qandastudy.vn/kh/uploads/files/LOGOQANDASTUDY%20(1).png")
         no-repeat center / contain;

@@ -52,5 +52,11 @@ export const subjects={
     ]
 }
 
+export const books={
+    title:'Khong chi de tham khao, ma con la di san',
+    data: [
+    ]
+}
+
 
 

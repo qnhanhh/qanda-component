@@ -1,5 +1,4 @@
 import { Button } from '../Button/Button'
-import { Fragment } from 'react'
 import * as css from './BannerCSS'
 
 export const Banner = () => {

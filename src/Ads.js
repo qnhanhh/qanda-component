@@ -1,9 +1,9 @@
 import 'boxicons'
 import styled from 'styled-components'
-import { Book3d } from './Book3d'
+import { Book3d } from './3d/Book3d'
 
 const Container = styled.div`
-    margin-top: 20px;
+    margin-top: 25px;
     padding: 5px 0;
     left: 0;
     right: 0;
@@ -12,7 +12,7 @@ const Container = styled.div`
 
     & > h2{
         font-size: 30px;
-        margin-bottom: 0;
+        margin: 0.7rem 0 0;
     }
 
     & > div{
@@ -21,7 +21,7 @@ const Container = styled.div`
 `
 const Desc = styled.div`
     color: #FF712C;
-    margin-top: 10px;
+    margin-top: 5px;
     display: flex;
     gap: 0.5rem;
     justify-content: center;
