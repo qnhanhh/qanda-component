@@ -30,7 +30,8 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     font-size: 2rem;
-
+    text-align: left;
+    
     & > ul{
         padding-left: 0;
         list-style-type: none;

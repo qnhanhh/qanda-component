@@ -1,9 +1,11 @@
 import { Button } from '../Button/Button'
+import {Navigation} from '../Navigation/Navigation'
 import * as css from './BannerCSS'
 
 export const Banner = () => {
     return (
         <>
+        <Navigation/>
         <css.Wrapper>
             <css.Video autoPlay muted loop>
                 <source src="https://qandastudy.vn/kh/uploads/files/Hero%20Banner.mp4" type="video/mp4" />
