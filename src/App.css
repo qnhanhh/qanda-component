@@ -4,3 +4,6 @@ html, body, #root, canvas{
     margin: 0;
     overflow: hidden;
 }
+*{
+    box-sizing: border-box;
+}

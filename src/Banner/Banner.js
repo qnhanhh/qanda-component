@@ -3,6 +3,7 @@ import * as css from './BannerCSS'
 
 export const Banner = () => {
     return (
+        <>
         <css.Wrapper>
             <css.Video autoPlay muted loop>
                 <source src="https://qandastudy.vn/kh/uploads/files/Hero%20Banner.mp4" type="video/mp4" />
@@ -15,5 +16,6 @@ export const Banner = () => {
                 </css.Container>
             </css.Caption>
         </css.Wrapper>
+        </>
     )
 }

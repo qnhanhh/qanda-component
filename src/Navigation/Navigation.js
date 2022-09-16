@@ -3,7 +3,7 @@ import 'boxicons'
 import * as css from './NavigationCSS'
 
 export const Navigation = () => {
-    const [active, setActive] = useState()
+    const [open, setOpen] = useState()
 
     useEffect(() => {
         const links = document.querySelectorAll('.nav-link')
@@ -12,7 +12,7 @@ export const Navigation = () => {
         links.forEach((link, index) => {
             link.onclick = (e) => {
                 e.preventDefault()
-                setActive(index)
+                setOpen(index)
             }
         })
     }, [])
@@ -23,13 +23,13 @@ export const Navigation = () => {
         const indicator = document.querySelector('.nav-indicator')
         links.forEach((link, index) => {
             link.classList.remove('nav-active')
-            if (index === active) {
+            if (index === open) {
                 link.classList.add('nav-active')
                 indicator.style.display = 'block'
                 indicator.style.left = `${leftIndex[index]}px`
             }
         })
-    }, [active])
+    }, [open])
 
     return (
         <css.Container>

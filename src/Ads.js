@@ -3,11 +3,12 @@ import styled from 'styled-components'
 import { Book3d } from './3d/Book3d'
 
 const Container = styled.div`
-    margin-top: 25px;
-    padding: 5px 0;
-    left: 0;
-    right: 0;
-    text-align: center;
+    height: 100vh;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #ffefeb;
 
     & > h2{
@@ -16,11 +17,13 @@ const Container = styled.div`
     }
 
     & > div{
+        font-size: 18px;
         padding: 16px 0 0;
     }
 `
 const Desc = styled.div`
     color: #FF712C;
+    font-size: 18px;
     margin-top: 5px;
     display: flex;
     gap: 0.5rem;
@@ -28,6 +31,8 @@ const Desc = styled.div`
     align-items: flex-start;
 `
 const Model = styled.div`
+    flex:1;
+    width: 100%;
     display: flex;
     align-items: center;
     padding:1rem;
@@ -35,6 +40,7 @@ const Model = styled.div`
 
 export const Ads = () => {
     return (
+        <>
         <Container>
             <h2>Su kien hang thang</h2>
             <div>Ra mat sach VOCA Junior</div>
@@ -45,5 +51,6 @@ export const Ads = () => {
                 <Book3d />
             </Model>
         </Container>
+        </>
     )
 }

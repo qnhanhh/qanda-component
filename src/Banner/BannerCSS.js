@@ -2,7 +2,8 @@ import styled from 'styled-components'
 
 export const Wrapper=styled.div`
     position: relative;
-    height: 600px;
+    height: 100vh;
+    overflow-y: hidden;
 `
 
 export const Video=styled.video`
@@ -29,7 +30,6 @@ export const Caption=styled.div`
 `
 
 export const Container=styled.div`
-    margin-top: 30px;
     width: 75%;
     font-size: 1.3rem;
 
