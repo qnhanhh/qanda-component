@@ -12,8 +12,9 @@ export const Banner = () => {
             </css.Video>
             <css.Caption>
                 <css.Container>
-                    <h2>Hoc theo cach cua ban voi<br /><span>QANDA Study</span></h2>
-                    <p>Nen tang hoc truc tuyen cung doi ngu giao vien ngoi sao - dem den co hoi thi cu cong bang cho moi hoc sinh tu lop 1 den lop 12.</p>
+                    <h2>Học theo cách của bạn với</h2>
+                    <h2 className='title'>QANDA Study</h2>
+                    <p>Nền tảng học trực tuyến cùng đội ngũ giáo viên ngôi sao - đem đến cơ hội thi cử công bằng cho mọi học sinh từ lớp 1 đến lớp 12.</p>
                     <Button />
                 </css.Container>
             </css.Caption>

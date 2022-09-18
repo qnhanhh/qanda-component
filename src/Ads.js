@@ -13,6 +13,7 @@ const Container = styled.div`
 
     & > h2{
         font-size: 30px;
+        font-family: 'Gilroy-700';
         margin: 0.7rem 0 0;
     }
 
@@ -42,9 +43,9 @@ export const Ads = () => {
     return (
         <>
         <Container>
-            <h2>Su kien hang thang</h2>
-            <div>Ra mat sach VOCA Junior</div>
-            <Desc>Xem chi tiet
+            <h2>Sự kiện hàng tháng</h2>
+            <div>Ra mắt sách VOCA Junior</div>
+            <Desc>Xem chi tiết
                 <box-icon color='#FF712C' name='chevrons-right'></box-icon>
             </Desc>
             <Model>

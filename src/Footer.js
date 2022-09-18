@@ -29,12 +29,15 @@ const Wrapper = styled.div`
     width: 70vw;
     display: flex;
     justify-content: space-between;
-    font-size: 2rem;
+    align-items: center;
     text-align: left;
+    font-size: 35px;
+    font-family: 'Gilroy-700';
     
     & > ul{
         padding-left: 0;
         list-style-type: none;
+        font-size: 22px;
     }
 `
 const Link = styled.a`
@@ -63,6 +66,7 @@ const Div1=styled.div`
     justify-content: space-between;
     align-items: flex-start;
     text-align: left;
+    font-size: 16px;
 `
 const Logo=styled.div`
     width: 45%;
@@ -79,6 +83,8 @@ const Info=styled.div`
     & > h3{
         margin: 0;
         color: #fff;
+        font-size: 18px;
+        font-family: 'Gilroy-700';
     }
 
     & > ul{
@@ -102,7 +108,7 @@ const Contact=styled.div`
 const Div2=styled.div`
     width: 70vw;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 20px;
     border-top: 1px solid #414141;
 `
 
@@ -117,10 +123,10 @@ export const Footer = () => {
                     <Wrapper>
                         <h2>QANDA STUDY</h2>
                         <ul>
-                            <li><Link href='/'>Giao vien</Link></li>
-                            <li><Link href='/'>Sach</Link></li>
-                            <li><Link href='/'>Su kien</Link></li>
-                            <li><Link href='/'>Ve chung toi</Link></li>
+                            <li><Link href='/'>Giáo viên</Link></li>
+                            <li><Link href='/'>Sách</Link></li>
+                            <li><Link href='/'>Sự kiện</Link></li>
+                            <li><Link href='/'>Về chúng tôi</Link></li>
                         </ul>
                     </Wrapper>
                 </Caption>
@@ -132,15 +138,15 @@ export const Footer = () => {
                         <span>Mathpresso Vietnam Co., Lt</span>
                     </Logo>
                     <Info>
-                        <h3>Thong tin lien he</h3>
+                        <h3>Thông tin liên hệ</h3>
                         <ul>
                             <li>0914 602 500</li>
                             <li>lienhe@qandastudy.vn</li>
-                            <li>So 157 Pho Ho Dac Di, Phuong Quang Trung, Quan Dong Da, Thanh pho Ha Noi, Viet Nam</li>
+                            <li>Số 157 Phố Hồ Đắc Di, Phường Quang Trung, Quận Đống Đa, Thành phố Hà Nội, Việt Nam</li>
                         </ul>
                     </Info>
                     <Contact>
-                        <span>Ket noi voi QANDA Study</span>
+                        <span>Kết nối với QANDA Study</span>
                         <span className='icon'>
                             <box-icon color='#fff' name='facebook-square' type='logo' ></box-icon>
                             <box-icon color='#fff' name='youtube' type='logo' ></box-icon>

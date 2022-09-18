@@ -31,13 +31,19 @@ export const Caption=styled.div`
 
 export const Container=styled.div`
     width: 75%;
-    font-size: 1.3rem;
-
-    & > span{
-        font-weight: 900;
+    font-size:30px;
+    font-family: 'Gilroy-700';
+    & > h2{
+        margin:0;
+    }
+    
+    & > .title{
+        font-family: 'Gilroy-900';
+        font-size: 50px;
     }
 
     & > p{
-        font-weight: 300;
+        font-family: 'Gilroy-300';
+        font-size: 16px;
     }
 `
