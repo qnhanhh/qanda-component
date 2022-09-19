@@ -5,7 +5,6 @@ import { Carousel } from './Carousel/Carousel'
 import { Footer } from './Footer'
 import LiquidSwipe from 'react-liquidswipe'
 import { Teachers } from './Teachers/Teachers'
-import { Navigation } from './Navigation/Navigation'
 
 function App() {
   const componentsToRender = [<Banner />, <Ads />, <Carousel props='teachers' />, <Carousel props='subjects' />, <Carousel props='books' />, <Footer />]
@@ -23,14 +22,6 @@ function App() {
         }}
       />} />
       </Routes>
-      {/* <LiquidSwipe
-        components={componentsToRender}
-        style={{
-          height: '100vh',
-          width: '100vw',
-        }}
-      /> */}
-      {/* <Navigation /> */}
     </BrowserRouter>
   );
 }

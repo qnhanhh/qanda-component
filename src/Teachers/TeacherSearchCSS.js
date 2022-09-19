@@ -65,7 +65,7 @@ export const Subjects = styled.div`
         padding-left: 0;
         list-style-type: none;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         gap: 2rem;
 
         & > li{
