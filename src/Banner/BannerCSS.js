@@ -46,4 +46,15 @@ export const Container=styled.div`
         font-family: 'Gilroy-300';
         font-size: 1.6rem;
     }
+
+    @media (max-width:375px){
+        font-size: 1.5rem;
+        & > .title{
+            font-size: 4rem;
+        }
+
+        & > p{
+            font-size: 1.5rem;
+        }
+    }
 `

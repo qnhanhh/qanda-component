@@ -4,6 +4,10 @@ import styled from 'styled-components'
 const Container = styled.div`
     position: relative;
     height: 55vh;
+
+    @media (max-width:569px){
+        height: 45vh;
+    }
 `
 const Video = styled.video`
     width: 100%;
@@ -39,6 +43,19 @@ const Wrapper = styled.div`
         list-style-type: none;
         font-size: 22px;
     }
+
+    @media (max-width:569px){
+        flex-direction: column;
+        justify-content: center;
+        &>h2{
+            margin: 0;
+            text-align: center;
+        }
+        &>ul{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
 `
 const Link = styled.a`
     text-decoration: none;
@@ -47,7 +64,13 @@ const Link = styled.a`
     display: block;
     padding: 5px;
     line-height: 2;
-    font-weight: 700;
+    font-family: 'Gilroy-700';
+
+    @media (max-width:569px){
+        line-height: 1.5;
+        width: 150%;
+        margin-right: 3rem;
+    }
 `
 const Bottom=styled.footer`
     font-size: 18px;
@@ -59,6 +82,10 @@ const Bottom=styled.footer`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media (max-width:569px){
+        height: 55vh;
+    }
 `
 const Div1=styled.div`
     margin: 0 auto;
@@ -68,6 +95,14 @@ const Div1=styled.div`
     align-items: flex-start;
     text-align: left;
     font-size: 16px;
+
+    @media (max-width:1200px){
+        width: 80vw;
+    }
+    @media (max-width:832px){
+        /* display: block; */
+        position: relative;
+    }
 `
 const Logo=styled.div`
     width: 45%;
@@ -95,6 +130,11 @@ const Info=styled.div`
             margin: 1.5rem 0;
         }
     }
+
+    @media (max-width:832px){
+        width: 50%;
+        margin: 0;
+    }
 `
 const Contact=styled.div`
     display: flex;
@@ -105,12 +145,26 @@ const Contact=styled.div`
         display: flex;
         gap: 0.5rem;
     }
+
+    @media (max-width:832px){
+        position: absolute;
+        bottom: 2rem;
+        left: 0;
+        max-width: 45%;
+    }
 `
 const Div2=styled.div`
     width: 70vw;
     text-align: center;
     padding-top: 20px;
     border-top: 1px solid #414141;
+
+    @media (max-width:1200px){
+        width: 80vw;
+    }
+    @media (max-width:832px){
+        width: 85vw;
+    }
 `
 
 export const Footer = () => {

@@ -8,10 +8,15 @@ const Container=styled.div`
         padding: 20px;
         background-color: rgb(255,113,44);
         color: #fff;
-        font-size: 24px;
+        font-size: 2.4rem;
         border-radius: 32px;
         display: inline-block;
         line-height: 100%;
+    }
+    @media (max-width:375px){
+        &>a{
+            font-size: 2rem;
+        }
     }
 `
 
