@@ -2,16 +2,16 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
         margin: 0;
-        padding-bottom: 2px;
+        padding-bottom: 0.2rem;
         width: 100vw;
-        height: 80px;
+        height: 8rem;
         border-radius: 20px 20px 0 0;
         background-color: #1D1D1D;
         position: fixed;
         z-index: 10;
 
         @media (max-width:832px) {
-            padding: 8px 0;
+            padding: 0.8rem 0;
         }
     `
 
@@ -28,7 +28,8 @@ export const List = styled.ul`
         filter: url('#goo');
 
         @media (max-width:832px) {
-            width: 90vw;
+            width: 100vw;
+            padding: 0;
         }
     `
 export const Indicator = styled.span`
@@ -52,14 +53,14 @@ export const Link = styled.a`
         height: 100%;
         display: inline-grid;
         place-items: center;
-        font-size: 30px;
+        font-size: 3rem;
         z-index: 1;
         position: relative;
 
         &.nav-active{
             color: #fff;
             transform: translateY(25%);
-            font-size: 45px;
+            font-size: 4.5rem;
             transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
@@ -67,6 +68,26 @@ export const Link = styled.a`
             width: 15vw;
             &.nav-active{
                 transform: translateY(0);
+            }
+            &> box-icon{
+                display: none;
+            }
+        }
+        @media (max-width:569px){
+            width: 60px;
+            &>box-icon{
+                display: block;
+            }
+            &.logo{
+                width: 130px;
+            }
+        }
+        @media (max-width:375px){
+            display: none;
+            &.logo{
+                display: block;
+                width: 50vw;
+                /* background-color: red; */
             }
         }
     `
@@ -81,22 +102,30 @@ export const Logo = styled.div`
         }
 
         @media (max-width:832px) {
-            &.nav-active{
-                transform: translateY(25%);
+            .nav-active &{
+                transform: translateY(0) !important;
             }
+        }
+        @media (max-width:569px){
+            width: 100%;
         }
     `
 export const Title = styled.span`
         display: none;
-        font-size: 20px;
+        font-size: 2rem;
+        text-align: center;
 
         .nav-active & {
             display: block;
         }
 
         @media (max-width:832px) {
-           font-size: 15px;
+           font-size: 1.5rem;
            display: block;
            color: #fff;
+        }
+        @media (max-width:569px){
+            font-size: 1.2rem;
+            display: none;
         }
     `

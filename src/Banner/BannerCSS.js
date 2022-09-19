@@ -31,7 +31,7 @@ export const Caption=styled.div`
 
 export const Container=styled.div`
     width: 75%;
-    font-size:30px;
+    font-size:3rem;
     font-family: 'Gilroy-700';
     & > h2{
         margin:0;
@@ -39,11 +39,11 @@ export const Container=styled.div`
     
     & > .title{
         font-family: 'Gilroy-900';
-        font-size: 50px;
+        font-size: 5rem;
     }
 
     & > p{
         font-family: 'Gilroy-300';
-        font-size: 16px;
+        font-size: 1.6rem;
     }
 `

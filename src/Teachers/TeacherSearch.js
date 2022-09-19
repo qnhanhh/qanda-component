@@ -1,4 +1,5 @@
 import { grades, subjects, teachers } from '../data/search'
+import { Footer } from '../Footer'
 import './Teachers.css'
 
 export const TeacherSearch = () => {
@@ -21,12 +22,13 @@ export const TeacherSearch = () => {
             <div className='result'>
                 {teachers.map((item, index) => {
                     return (
-                        <div key={index}>
+                        <div className='result-div' key={index}>
                             <img src={item.url} alt=''></img>
                         </div>
                     )
                 })}
             </div>
+            <Footer/>
         </>
     )
 }

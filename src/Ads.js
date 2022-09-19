@@ -4,7 +4,7 @@ import { Book3d } from './3d/Book3d'
 
 const Container = styled.div`
     height: 100vh;
-    padding-bottom: 20px;
+    padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,24 +12,28 @@ const Container = styled.div`
     background-color: #ffefeb;
 
     & > h2{
-        font-size: 30px;
+        font-size: 3rem;
         font-family: 'Gilroy-700';
         margin: 0.7rem 0 0;
     }
 
     & > div{
-        font-size: 18px;
-        padding: 16px 0 0;
+        font-size: 1.8rem;
+        padding: 1.6rem 0 0;
     }
 `
 const Desc = styled.div`
-    color: #FF712C;
-    font-size: 18px;
-    margin-top: 5px;
-    display: flex;
-    gap: 0.5rem;
-    justify-content: center;
-    align-items: flex-start;
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+
+    &>a{
+        text-decoration: none;
+        color: #FF712C;
+        display: flex;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: flex-start;
+    }
 `
 const Model = styled.div`
     flex:1;
@@ -42,16 +46,18 @@ const Model = styled.div`
 export const Ads = () => {
     return (
         <>
-        <Container>
-            <h2>Sự kiện hàng tháng</h2>
-            <div>Ra mắt sách VOCA Junior</div>
-            <Desc>Xem chi tiết
-                <box-icon color='#FF712C' name='chevrons-right'></box-icon>
-            </Desc>
-            <Model>
-                <Book3d />
-            </Model>
-        </Container>
+            <Container>
+                <h2>Sự kiện hàng tháng</h2>
+                <div>Ra mắt sách VOCA Junior</div>
+                <Desc>
+                    <a href='/'>Xem chi tiết
+                        <box-icon color='#FF712C' name='chevrons-right'></box-icon>
+                    </a>
+                </Desc>
+                <Model>
+                    <Book3d />
+                </Model>
+            </Container>
         </>
     )
 }

@@ -11,7 +11,7 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     & > h2{
-        font-size: 30px;
+        font-size: 3rem;
         font-family: 'Gilroy-700';
         max-width: 70vw;
         text-align: center;
@@ -19,17 +19,17 @@ const Container = styled.div`
     }
     &>.carousel{
         flex:1;
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
         cursor: grab;
         overflow: hidden;
 
         &>.inner-carousel{
             display: flex;
-            padding: 0 20px;
+            padding: 0 2rem;
             width: 80vw;
             height: 100%;
             &>.item{
-                min-width: 30%;
+                min-width: fit-content;
                 height: 100%;
                 padding: 8px;
                 &>img{
@@ -43,13 +43,16 @@ const Container = styled.div`
     }
 `
 const Desc = styled.div`
-    font-size: 18px;
+    font-size: 1.8rem;
     padding: 1rem;
-    display: flex;
-    gap: 0.5rem;
-    justify-content: center;
-    align-items: flex-start;
-    color: #FF712C;
+    & >a{
+        text-decoration: none;
+        display: flex;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: flex-start;
+        color: #FF712C;
+    }
 `
 
 export const Carousel = ({ props }) => {
@@ -67,8 +70,10 @@ export const Carousel = ({ props }) => {
                     {props === 'teachers' && <h2>{teachers.title}</h2>}
                     {props === 'subjects' && <h2>{subjects.title}</h2>}
                     {props === 'books' && <h2>{books.title}</h2>}
-                    <Desc>Xem tất cả
-                        <box-icon color='#FF712C' name='chevrons-right'></box-icon>
+                    <Desc>
+                        <a href=''>Xem tất cả
+                            <box-icon color='#FF712C' name='chevrons-right'></box-icon>
+                        </a>
                     </Desc>
                     <motion.div ref={carousel} className='carousel' whileTap={{ cursor: "grabbing" }}>
                         {props === 'teachers' &&

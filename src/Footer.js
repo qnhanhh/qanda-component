@@ -43,6 +43,7 @@ const Wrapper = styled.div`
 const Link = styled.a`
     text-decoration: none;
     color: #fff;
+    width: fit-content;
     display: block;
     padding: 5px;
     line-height: 2;
@@ -123,10 +124,10 @@ export const Footer = () => {
                     <Wrapper>
                         <h2>QANDA STUDY</h2>
                         <ul>
-                            <li><Link href='/'>Giáo viên</Link></li>
-                            <li><Link href='/'>Sách</Link></li>
-                            <li><Link href='/'>Sự kiện</Link></li>
-                            <li><Link href='/'>Về chúng tôi</Link></li>
+                            <li><Link href='/' className='hvr-underline-from-center'>Giáo viên</Link></li>
+                            <li><Link href='/' className='hvr-underline-from-center'>Sách</Link></li>
+                            <li><Link href='/' className='hvr-underline-from-center'>Sự kiện</Link></li>
+                            <li><Link href='/' className='hvr-underline-from-center'>Về chúng tôi</Link></li>
                         </ul>
                     </Wrapper>
                 </Caption>

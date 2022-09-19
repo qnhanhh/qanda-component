@@ -9,14 +9,14 @@ function App() {
   const componentsToRender=[<Banner/>,<Ads/>,<Carousel props='teachers'/>,<Carousel props='subjects'/>,<Carousel props='books'/>,<Footer/>]
 
   return (
-    // <LiquidSwipe
-    // components={componentsToRender}
-    // style={{
-    //   height: '100vh',
-    //   width: '100vw',
-    // }}
-    // />
-    <Teachers/>
+    <LiquidSwipe
+    components={componentsToRender}
+    style={{
+      height: '100vh',
+      width: '100vw',
+    }}
+    />
+    // <Teachers/>
   );
 }
 

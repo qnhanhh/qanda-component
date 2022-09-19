@@ -37,30 +37,30 @@ export const Navigation = () => {
                 <css.Indicator className='nav-indicator'></css.Indicator>
                 <li>
                     <css.Link href="/" className='nav-link'>
-                        <css.Title>Giao vien</css.Title>
+                        <css.Title>Giáo viên</css.Title>
                         <box-icon color='white' name="chalkboard"></box-icon>
                     </css.Link>
                 </li>
                 <li>
                     <css.Link href="/" className='nav-link'>
-                        <css.Title>Sach</css.Title>
+                        <css.Title>Sách</css.Title>
                         <box-icon color='white' name="book-open"></box-icon>
                     </css.Link>
                 </li>
                 <li>
-                    <css.Link href="/" className="nav-link">
+                    <css.Link href="/" className="nav-link logo">
                         <css.Logo></css.Logo>
                     </css.Link>
                 </li>
                 <li>
                     <css.Link href="/" className='nav-link'>
-                        <css.Title>Su kien</css.Title>
+                        <css.Title>Sự kiện</css.Title>
                         <box-icon color='white' name="calendar-event"></box-icon>
                     </css.Link>
                 </li>
                 <li>
                     <css.Link href="/" className='nav-link'>
-                        <css.Title>Ve chung toi</css.Title>
+                        <css.Title>Về chúng tôi</css.Title>
                         <box-icon color='white' name="building-house"></box-icon>
                     </css.Link>
                 </li>
