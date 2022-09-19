@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 
 export const Container = styled.div`
         margin: 0;
@@ -46,7 +47,7 @@ export const Indicator = styled.span`
            display: none !important;
         }
     `
-export const Link = styled.a`
+export const Anchor = styled(Link)`
         text-decoration: none;
         color: #1D1D1D;
         width: 120px;
@@ -87,7 +88,6 @@ export const Link = styled.a`
             &.logo{
                 display: block;
                 width: 50vw;
-                /* background-color: red; */
             }
         }
     `

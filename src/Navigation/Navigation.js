@@ -3,19 +3,20 @@ import 'boxicons'
 import * as css from './NavigationCSS'
 
 export const Navigation = () => {
-    const [open, setOpen] = useState()
+    const [open, setOpen] = useState('/')
+    console.log(open);
 
     useEffect(() => {
+        const param=window.location.pathname
         const links = document.querySelectorAll('.nav-link')
         const indicator = document.querySelector('.nav-indicator')
         indicator.style.display = 'none'
-        links.forEach((link, index) => {
-            link.onclick = (e) => {
-                e.preventDefault()
-                setOpen(index)
+        links.forEach((link) => {
+            if(link.getAttribute('href')===param){
+                setOpen(link.getAttribute('href'))
             }
         })
-    }, [])
+    })
 
     useEffect(() => {
         const leftIndex = [31, 195, 360, 518, 680]
@@ -23,7 +24,7 @@ export const Navigation = () => {
         const indicator = document.querySelector('.nav-indicator')
         links.forEach((link, index) => {
             link.classList.remove('nav-active')
-            if (index === open) {
+            if (link.getAttribute('href') === open) {
                 link.classList.add('nav-active')
                 indicator.style.display = 'block'
                 indicator.style.left = `${leftIndex[index]}px`
@@ -36,33 +37,33 @@ export const Navigation = () => {
             <css.List>
                 <css.Indicator className='nav-indicator'></css.Indicator>
                 <li>
-                    <css.Link href="/" className='nav-link'>
+                    <css.Anchor to="/teachers" className='nav-link'>
                         <css.Title>Giáo viên</css.Title>
                         <box-icon color='white' name="chalkboard"></box-icon>
-                    </css.Link>
+                    </css.Anchor>
                 </li>
                 <li>
-                    <css.Link href="/" className='nav-link'>
+                    <css.Anchor to="/books" className='nav-link'>
                         <css.Title>Sách</css.Title>
                         <box-icon color='white' name="book-open"></box-icon>
-                    </css.Link>
+                    </css.Anchor>
                 </li>
                 <li>
-                    <css.Link href="/" className="nav-link logo">
+                    <css.Anchor to="/" className="nav-link logo">
                         <css.Logo></css.Logo>
-                    </css.Link>
+                    </css.Anchor>
                 </li>
                 <li>
-                    <css.Link href="/" className='nav-link'>
+                    <css.Anchor to="/events" className='nav-link'>
                         <css.Title>Sự kiện</css.Title>
                         <box-icon color='white' name="calendar-event"></box-icon>
-                    </css.Link>
+                    </css.Anchor>
                 </li>
                 <li>
-                    <css.Link href="/" className='nav-link'>
+                    <css.Anchor to="/about" className='nav-link'>
                         <css.Title>Về chúng tôi</css.Title>
                         <box-icon color='white' name="building-house"></box-icon>
-                    </css.Link>
+                    </css.Anchor>
                 </li>
             </css.List>
 
