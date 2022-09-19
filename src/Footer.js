@@ -68,8 +68,8 @@ const Link = styled.a`
 
     @media (max-width:569px){
         line-height: 1.5;
-        width: 150%;
-        margin-right: 3rem;
+        /* width: 150%; */
+        /* margin-right: 3rem; */
     }
 `
 const Bottom=styled.footer`

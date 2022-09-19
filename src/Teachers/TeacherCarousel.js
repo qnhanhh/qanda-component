@@ -6,12 +6,19 @@ import { prominentTeachers } from '../data/carousel'
 
 const Title = styled.h2`
     text-align: center;
-    font-size: 30px;
+    font-size: 3rem;
     font-family: 'Gilroy-700';
     margin-top: 60px;
     
     & > span{
         color: #ff4d00;
+    }
+
+    @media (max-width:569px) {
+        font-size: 2.5rem;
+    }
+    @media (max-width:375px) {
+        font-size: 2.2rem;
     }
 `
 const Container = styled(Slider)`

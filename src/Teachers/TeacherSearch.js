@@ -1,33 +1,33 @@
 import { grades, subjects, teachers } from '../data/search'
 import { Footer } from '../Footer'
-import './Teachers.css'
+import * as css from './TeacherSearchCSS'
 
 export const TeacherSearch = () => {
     return (
         <>
-            <h2 className='title'>Môn học bạn đang tìm kiếm?</h2>
-            <div className='grades'>
+            <css.Title>Môn học bạn đang tìm kiếm?</css.Title>
+            <css.Grades>
                 {grades.map((item, index) => {
                     return <h2 key={index}>{item}</h2>
                 })}
-            </div>
-            <div className='subjects'>
+            </css.Grades>
+            <css.Subjects>
                 <ul>
                     {subjects.map((item, index) => {
                         return <li key={index}>{item}</li>
                     })}
                 </ul>
-            </div>
-            <h2 className='title'>Giáo viên</h2>
-            <div className='result'>
+            </css.Subjects>
+            <css.Title>Giáo viên</css.Title>
+            <css.Result>
                 {teachers.map((item, index) => {
                     return (
-                        <div className='result-div' key={index}>
+                        <div key={index}>
                             <img src={item.url} alt=''></img>
                         </div>
                     )
                 })}
-            </div>
+            </css.Result>
             <Footer/>
         </>
     )

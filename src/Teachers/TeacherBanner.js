@@ -12,6 +12,8 @@ const Container=styled.div`
 `
 const Text=styled.div`
     position: absolute;
+    max-width: 80%;
+    margin: auto;
     top: 80px;
     left: 0;
     right: 0;
@@ -20,16 +22,34 @@ const Text=styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     color: #fff;
 
     & > h2{
-        font-size: 32px;
+        font-size: 3.2rem;
         font-family: 'Gilroy-700';
         margin: 0;
     }   
     & > p{
-        font-size: 16px;
+        font-size: 1.6rem;
         font-family: 'Gilroy-300';
+    }
+
+    @media (max-width:569px) {
+        &>h2{
+            font-size: 2.5rem;
+        }
+        &>p{
+            font-size: 1.3rem;
+        }
+    }
+    @media (max-width:375px) {
+        &>h2{
+            font-size: 2.2rem;
+        }
+        &>p{
+            font-size: 1.1rem;
+        }
     }
 `
 export const TeacherBanner=()=>{

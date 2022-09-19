@@ -5,6 +5,7 @@ html {
 body {
   margin: 0;
   font-family: "Gilroy-400";
+  overflow-x: hidden;
 }
 
 * {
