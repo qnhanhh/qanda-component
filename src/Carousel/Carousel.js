@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { useRef, useEffect, useState } from 'react'
-import styled from 'styled-components';
+import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 import { teachers, subjects, books } from '../data/carousel'
 
 const Container = styled.div`
@@ -67,17 +68,15 @@ export const Carousel = ({ props }) => {
         <>
             <Container>
                 <>
-                    {props === 'teachers' && <h2>{teachers.title}</h2>}
-                    {props === 'subjects' && <h2>{subjects.title}</h2>}
-                    {props === 'books' && <h2>{books.title}</h2>}
-                    <Desc>
-                        <a href=''>Xem tất cả
-                            <box-icon color='#FF712C' name='chevrons-right'></box-icon>
-                        </a>
-                    </Desc>
-                    <motion.div ref={carousel} className='carousel' whileTap={{ cursor: "grabbing" }}>
-                        {props === 'teachers' &&
-                            <>
+                    {props === 'teachers' &&
+                        <>
+                            <h2>{teachers.title}</h2>
+                            <Desc>
+                                <Link to='/teachers'>Xem tất cả
+                                    <box-icon color='#FF712C' name='chevrons-right'></box-icon>
+                                </Link>
+                            </Desc>
+                            <motion.div ref={carousel} className='carousel' whileTap={{ cursor: "grabbing" }}>
                                 <motion.div drag='x' dragConstraints={{ right: 0, left: -width }} className='inner-carousel'>
                                     {teachers.data.map((item, index) => {
                                         return (
@@ -87,10 +86,19 @@ export const Carousel = ({ props }) => {
                                         )
                                     })}
                                 </motion.div>
-                            </>
-                        }
-                        {props === 'subjects' &&
-                            <>
+                            </motion.div>
+                        </>
+                    }
+
+                    {props === 'subjects' &&
+                        <>
+                            <h2>{subjects.title}</h2>
+                            <Desc>
+                                <Link to='/teachers'>Xem tất cả
+                                    <box-icon color='#FF712C' name='chevrons-right'></box-icon>
+                                </Link>
+                            </Desc>
+                            <motion.div ref={carousel} className='carousel' whileTap={{ cursor: "grabbing" }}>
                                 <motion.div drag='x' dragConstraints={{ right: 0, left: -width }} className='inner-carousel'>
                                     {subjects.data.map((item, index) => {
                                         return (
@@ -100,10 +108,19 @@ export const Carousel = ({ props }) => {
                                         )
                                     })}
                                 </motion.div>
-                            </>
-                        }
-                        {props === 'books' &&
-                            <>
+                            </motion.div>
+                        </>
+                    }
+
+                    {props === 'books' &&
+                        <>
+                            <h2>{books.title}</h2>
+                            <Desc>
+                                <Link to='/books'>Xem tất cả
+                                    <box-icon color='#FF712C' name='chevrons-right'></box-icon>
+                                </Link>
+                            </Desc>
+                            <motion.div ref={carousel} className='carousel' whileTap={{ cursor: "grabbing" }}>
                                 <motion.div drag='x' dragConstraints={{ right: 0, left: -width }} className='inner-carousel'>
                                     {books.data.map((item, index) => {
                                         return (
@@ -113,9 +130,9 @@ export const Carousel = ({ props }) => {
                                         )
                                     })}
                                 </motion.div>
-                            </>
-                        }
-                    </motion.div>
+                            </motion.div>
+                        </>
+                    }
                 </>
             </Container>
         </>

@@ -23,6 +23,8 @@ export const Grades = styled.div`
 
     & > h2{
         font-size: 2.2rem;
+        padding: 10px;
+        cursor: pointer;
     }
 
     @media (max-width:569px) {

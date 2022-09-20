@@ -1,5 +1,6 @@
 import 'boxicons'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 import { Book3d } from './3d/Book3d'
 
 const Container = styled.div`
@@ -50,9 +51,9 @@ export const Ads = () => {
                 <h2>Sự kiện hàng tháng</h2>
                 <div>Ra mắt sách VOCA Junior</div>
                 <Desc>
-                    <a href='/'>Xem chi tiết
+                    <Link to='/events'>Xem chi tiết
                         <box-icon color='#FF712C' name='chevrons-right'></box-icon>
-                    </a>
+                    </Link>
                 </Desc>
                 <Model>
                     <Book3d />
